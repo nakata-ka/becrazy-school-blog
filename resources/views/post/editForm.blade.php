@@ -6,7 +6,7 @@
 @section('main')
 @parent
 <h6>下記より編集したい項目をチェックしてください</h6>
-<form method="POST">
+<form method="POST" method="/admin/articleEdit">
     @csrf
     <table class="table table-striped" style="table-layout:fixed">
         <thead>
