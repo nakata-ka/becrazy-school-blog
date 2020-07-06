@@ -1,0 +1,32 @@
+a {
+    color:white;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+.nav-tabs {
+    background-color: black;
+}
+
+.nav-item {
+    color:white;
+}
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: space-around;
+}
+
+ul.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.jumbotron {
+    background-color: rgba(204, 255, 204, 0.55);
+}
+
+a:hover {
+    color:blue;
+}

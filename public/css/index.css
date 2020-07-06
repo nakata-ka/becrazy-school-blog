@@ -1,0 +1,62 @@
+body {
+    font-size 2rem;
+    width: 800px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: inline-grid;
+    grid-template:
+        "header header header header header" 150px
+        "...... ...... ...... ...... ......" 10px
+        "left   ...... center ...... right"  1fr
+        "...... ...... ...... ...... ......" 20px
+        "footer ...... footer ...... footer" 300px
+        /150px 20px 1fr 10px 200px;
+
+}
+.wrappaer {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+}
+
+.wrapper {
+    border: 2px solid #f76707;
+    border-radius: 5px;
+  }
+
+  .wrapper > div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #d9480f;
+  }
+
+header {
+    grid-area: header;
+}
+main {
+    grid-area: center;
+}
+nav {
+    grid-area: left;
+}
+aside {
+    grid-area: right;
+}
+footer {
+    grid-area: footer;
+}
+
+/*
+レスポンシブ対応
+*/
+@media screen and (max-width: 1000px) {
+    body {
+        grid-template:
+        "header" 150px
+        "center" 1fr
+        "left  "
+        "right "
+        "footer" 300px;
+    }
+}
