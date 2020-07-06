@@ -8,10 +8,12 @@ use App\Models\Taxonomy;
 use Auth;
 
 class CategoryController extends Controller {
+//ホーム
     public function home() {
         $categories=Taxonomy::where('type','tag')->get();
         return view('index',['categories'=>$categories,'link_navi'=>'home']);
     }
+
 //カテゴリー別
     public function indicate($category) {
         $taxonomies=Taxonomy::where('name',$category)->first();
